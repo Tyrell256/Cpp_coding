@@ -8,7 +8,11 @@ void exponents(int base, int power ) {
     int s = 1;
     for (int i = 0; i < power; i++)
     {
+       if (power > 0){
         s *= base;
+       }
+      
+        
     }
 
     cout << s;
@@ -17,4 +21,5 @@ void exponents(int base, int power ) {
 
 int main() {
     exponents(2, 8);
+    exponents(2, -2);
 }
